@@ -11,7 +11,7 @@ export const getPosts = async (req, res) => {
 }
 
 export const createPost = async (req, res) => {
-    const {title, description} = req.bodys
+    const {title, description} = req.body
     try{   
         const newPost = await Post.create({
             title,
